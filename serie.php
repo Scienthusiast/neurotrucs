@@ -14,7 +14,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Custom styles for this template -->
-	<link href="css/cover.css" rel="stylesheet">
+	<link href="css/neurotrucs.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
@@ -30,7 +30,7 @@
 
 					<div id="serie">
 
-						<h1 class="cover-heading">LA SÉRIE</h1>
+						<h1 class="cover-heading">LA SERIE</h1>
 						<p class="lead">
 							« NeuroTrucs » ou les divagations de deux colocataires improbables. L’emménagement de Gina, étudiante en thèse de sciences cognitives, et son arrivée dans la vie de Will, écrivain névrosé, marquent le début de leurs tribulations. Leurs désaccords sont un prétexte à l’abord de sujets scientifiques liés aux comportements humains, à la psychologie et aux sciences du cerveau. Leurs caractères sont l’assurance de réparties cinglantes et de discussions passionnées. Leur curiosité de tous les instants n’a d’égale que leur soif de comprendre. Les sciences cognitives sont fascinantes et sources de mythes et légendes très présents dans la culture populaire. Gina et Will sont là pour briser ces fausses croyances en les intégrant pleinement à leur vie et à leur quotidien. Qu’on les suive pour leurs histoires ou pour leur science, nul doute qu’ils sauront vous captiver et vous faire rire.
 						</p>

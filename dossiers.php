@@ -13,8 +13,7 @@
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Custom styles for this template -->
-	<link href="css/cover.css" rel="stylesheet">
+	<link href="css/neurotrucs.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
