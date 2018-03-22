@@ -12,6 +12,7 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/nt.css" rel="stylesheet">
+  <link href="css/neurotrucs.css" rel="stylesheet">
 
 </head>
 
@@ -24,19 +25,20 @@
 
   <?php include("snipets/navbar.php");?>
 
-  <section class="page-section about-heading">
+
+
+
+    <section class="page-section">
       <div class="container">
-        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/ecriture2.jpg" alt="">
-        <div class="about-heading-content">
-          <div class="row">
-            <div class="col-xl-9 col-lg-10 mx-auto">
-              <div class="bg-faded rounded p-5">
-                <h2 class="section-heading mb-4">
-                  <span class="section-heading-lower">La série</span>
-                </h2>
-                <p class="mb-0">
-          </p>
-              </div>
+        <div class="product-item">
+          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/presentation.jpg" alt="">
+          
+          <div class="d-inline-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+             
+              <div class="intro-button mx-auto">
+              <a id="btn-ulule" class="btn btn-primary btn-xl" href="https://fr.ulule.com/neurotrucs/">Visitez notre Ulule</a>
+            </div>
             </div>
           </div>
         </div>
