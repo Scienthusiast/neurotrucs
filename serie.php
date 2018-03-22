@@ -10,42 +10,96 @@
 
 	<title>Neurotrucs</title>
 
-	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Custom styles for this template -->
+	<link href="css/nt.css" rel="stylesheet">
 	<link href="css/neurotrucs.css" rel="stylesheet">
+
 </head>
 
-<body class="text-center">
+<body>
 
-	<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-		<?php include("snipets/header.php");?>
+	<h1 class="site-heading text-center text-black d-none d-lg-block">
+		<!-- <span class="site-heading-upper text-primary mb-3">A SuperTitle</span> -->
+		<span class="site-heading-lower">Neurotrucs</span>
+	</h1>
 
-
-		<div class="row">
-
-			<div class="col-md-12">
-				<main role="main">
-
-					<div id="serie">
-
-						<h1 class="cover-heading">LA SERIE</h1>
-						<p class="lead">
-							« NeuroTrucs » ou les divagations de deux colocataires improbables. L’emménagement de Gina, étudiante en thèse de sciences cognitives, et son arrivée dans la vie de Will, écrivain névrosé, marquent le début de leurs tribulations. Leurs désaccords sont un prétexte à l’abord de sujets scientifiques liés aux comportements humains, à la psychologie et aux sciences du cerveau. Leurs caractères sont l’assurance de réparties cinglantes et de discussions passionnées. Leur curiosité de tous les instants n’a d’égale que leur soif de comprendre. Les sciences cognitives sont fascinantes et sources de mythes et légendes très présents dans la culture populaire. Gina et Will sont là pour briser ces fausses croyances en les intégrant pleinement à leur vie et à leur quotidien. Qu’on les suive pour leurs histoires ou pour leur science, nul doute qu’ils sauront vous captiver et vous faire rire.
-						</p>
+	<?php include("snipets/navbar.php");?>
+	<section class="page-section">
+		<div class="container">
+			<div class="product-item">
+				<div class="product-item-title d-flex">
+					<div class="bg-faded p-5 d-flex ml-auto rounded format-serie">
+						<h3 class="mb-0">
+							<p>Format</p>
+							<p>5 minutes par episode</p>
+							<p>12 episodes par saison</p>
+							<p>4 saison deja prevues <br/>(possibilite de plus)</p>
+						</h3>
 					</div>
-				</main>
+				</div>
 			</div>
 		</div>
+	</section>
+
+
+	<section class="page-section about-heading">
+		<div class="container">
+			<img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/bandeau.jpg" alt="">
+			<div class="about-heading-content">
+				<div class="row">
+					<div class="col-xl-9 col-lg-10 mx-auto">
+						<div class="bg-faded rounded p-5">
+							<h2 class="section-heading mb-4">
+								<span class="section-heading-lower">La série</span>
+							</h2>
+							<p class="mb-2">
+								<span class="redbold">« NeuroTrucs » ou l’improbable colocation.</span>
+							</p>
+							<p class="mb-2">
+								L’emménagement de Gina, excentrique étudiante en thèse de sciences cognitives, dans l’appartement de Will, écrivain solitaire et maniaque, va bouleverser leur vie à tous les deux. Elle doit finir sa thèse, il doit écrire son troisième roman, et la cohabitation va être mouvementée. Trop d’efforts pour s’adapter l’un à l’autre, ils en arrivent à se faire la guerre, puis se réconcilient. Ils s’entraident, se soutiennent, se rapprochent, un peu, beaucoup, trop peut-être...	
+							</p>
+							<p class="mb-2">
+								Leurs désaccords sont un prétexte à l’abord de sujets scientifiques liés aux comportements humains, à la psychologie et aux sciences du cerveau, sources de mythes et légendes très présents dans la culture populaire. Gina et Will sont là pour briser ces fausses croyances en les intégrant pleinement à leur quotidien. Leurs caractères sont l’assurance de réparties cinglantes et de discussions passionnées !
+							</p>
+							<p class="mb-0">
+								<span class="redbold">Qu’on les suive pour leur histoire ou pour leur science, nul doute qu’ils sauront vous captiver et vous faire rire.</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex ml-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="section-heading-lower">Will</span>
+              </h2>
+            </div>
+          </div>
+          <img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/will.png" alt="">
+          <div class="product-item-description d-flex mr-auto">
+            <div class="bg-faded p-5 rounded">
+              <p class="mb-0">Ecrivain, auteur de romans policiers. Il est solitaire et obsédé par son travail. Il aime l'ordre et la propreté, et supporte mal qu’on lui change ses habitudes. Sa personnalité curieuse, maladroite et déconcertante est un atout pour en faire le représentant pour la série de ceux qui pensent savoir.</p>
+              <p class="redbold">Il croit en beaucoup d’idées reçues concernant les sciences cognitives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
 	<?php include("snipets/footer.php");?>
-	</div>
 
-
-
+	<!-- Bootstrap core JavaScript -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
-</html>
 
+</html>

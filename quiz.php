@@ -25,44 +25,13 @@
     <span class="site-heading-lower">Neurotrucs</span>
   </h1>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.php">La série
-            </a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="ecriture.php">Écriture</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="dossiers.php">Neurotrucs en +</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="soutiens.php">Soutiens</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="contact.php">Contact</a>
-          </li>
-          <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="quiz.php">Neuroquiz<span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+  <?php include("snipets/navbar.php");?>
 
   <section class="page-section about-heading">
     <div class="container">
       <div class="about-heading-content">
         <div class="row">
-          <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="col-xl-9 col-lg-10 mx-auto mt-3">
             <div class="bg-faded rounded p-5">
               <h2 class="section-heading mb-4">
                 <span class="section-heading-lower">Neuroquiz</span>
@@ -86,7 +55,7 @@
     <section class="page-section" id="quiz-core">
       <div class="container">
         <div class="row">
-          <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="col-xl-9 col-lg-10 mt-3 mx-auto">
             <div class="bg-faded rounded p-5">
 
               <div class="text-center">
@@ -141,7 +110,7 @@
              </div>
            </div>
            <div class="text-center">
-             <p>Que pensez-vous de cette affirmation ?</p>
+             <p><em>Que pensez-vous de cette affirmation ?</em></p>
            </div>
 
 

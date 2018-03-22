@@ -10,14 +10,7 @@
 
   <title>Neurotrucs</title>
 
-  <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-
-<!--    Custom fonts for this template
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"> -->
-
-  <!-- Custom styles for this template -->
   <link href="css/nt.css" rel="stylesheet">
 
 </head>
@@ -29,44 +22,11 @@
     <span class="site-heading-lower">Neurotrucs</span>
   </h1>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.php">La série
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-		  <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="ecriture.php">Écriture</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="dossiers.php">Neurotrucs en +</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="soutiens.php">Soutiens</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="contact.php">Contact</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="quiz.php">Neuroquiz</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  
+  <?php include("snipets/navbar.php");?>
 
   <section class="page-section about-heading">
       <div class="container">
-        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/intro.jpg" alt="">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/ecriture2.jpg" alt="">
         <div class="about-heading-content">
           <div class="row">
             <div class="col-xl-9 col-lg-10 mx-auto">
@@ -75,7 +35,7 @@
                   <span class="section-heading-lower">La série</span>
                 </h2>
                 <p class="mb-0">
-                « NeuroTrucs » ou les divagations de deux colocataires improbables. L’emménagement de Gina, étudiante en thèse de sciences cognitives, et son arrivée dans la vie de Will, écrivain névrosé, marquent le début de leurs tribulations. Leurs désaccords sont un prétexte à l’abord de sujets scientifiques liés aux comportements humains, à la psychologie et aux sciences du cerveau. Leurs caractères sont l’assurance de réparties cinglantes et de discussions passionnées. Leur curiosité de tous les instants n’a d’égale que leur soif de comprendre. Les sciences cognitives sont fascinantes et sources de mythes et légendes très présents dans la culture populaire. Gina et Will sont là pour briser ces fausses croyances en les intégrant pleinement à leur vie et à leur quotidien. Qu’on les suive pour leurs histoires ou pour leur science, nul doute qu’ils sauront vous captiver et vous faire rire.</p>
+          </p>
               </div>
             </div>
           </div>
