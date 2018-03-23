@@ -52,10 +52,10 @@
   </section>
 
   <section class="page-section about-heading">
-    <div class="container">
+    <div class="container d-flex justify-content-center">
       <div class="about-heading-content">
         <div class="row">
-          <div class="col-xl-9 col-lg-10 mx-auto mt-3">       
+          <div class="mx-auto mt-3">       
             <img class="img-fluid rounded about-heading-img mt-1 mb-lg-0" src="img/ecriture.png" alt="">
           </div>
         </div>

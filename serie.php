@@ -72,25 +72,35 @@
 	</section>
 
 	<section class="page-section">
-      <div class="container">
-        <div class="product-item">
-          <div class="product-item-title d-flex">
-            <div class="bg-faded p-5 d-flex ml-auto rounded">
-              <h2 class="section-heading mb-0">
-                <span class="section-heading-lower">Will</span>
-              </h2>
-            </div>
-          </div>
-          <img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/will.png" alt="">
-          <div class="product-item-description d-flex mr-auto">
-            <div class="bg-faded p-5 rounded">
-              <p class="mb-0">Ecrivain, auteur de romans policiers. Il est solitaire et obsédé par son travail. Il aime l'ordre et la propreté, et supporte mal qu’on lui change ses habitudes. Sa personnalité curieuse, maladroite et déconcertante est un atout pour en faire le représentant pour la série de ceux qui pensent savoir.</p>
-              <p class="redbold">Il croit en beaucoup d’idées reçues concernant les sciences cognitives.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 col-lg-6">
+					<img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/will.png" width="100" alt="Will">
+					<div class="product-item-description d-flex mr-auto">
+						<div class="bg-faded p-5 rounded">
+							<h2 class="section-heading mb-0">
+								<span class="section-heading-lower">Will</span>
+							</h2>
+							<p class="mb-0">Ecrivain, auteur de romans policiers. Il est solitaire et obsédé par son travail. Il aime l'ordre et la propreté, et supporte mal qu’on lui change ses habitudes. Sa personnalité curieuse, maladroite et déconcertante est un atout pour en faire le représentant pour la série de ceux qui pensent savoir.</p>
+							<p class="redbold">Il croit en beaucoup d’idées reçues concernant les sciences cognitives.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6">
+					<img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/gina.png" width="100" alt="Gina">
+					<div class="product-item-description d-flex mr-auto">
+						<div class="bg-faded p-5 rounded">
+							<h2 class="section-heading mb-0">
+								<span class="section-heading-lower">Gina</span>
+							</h2>
+							<p class="mb-0">Etudiante en thèse dans un laboratoire de recherche en sciences cognitives. Elle est excentrique et bordélique. Elle aime la couleur et la fantaisie. Elle est passionnée par son métier et ses implications. Elle ne croit qu’en la méthode scientifique et est prête à tout pour convaincre les autres d’en faire de même.</p>
+							<p class="redbold">C’est elle qui rétablit la vérité sur les fausses croyances évoquées par Will.ant pour la série de ceux qui pensent savoir.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 

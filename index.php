@@ -26,33 +26,31 @@
   <?php include("snipets/navbar.php");?>
 
 
+  <section class="page-section about-heading">
+    <div class="container d-flex justify-content-center">
+      <img class="img-fluid rounded mb-3 mb-lg-0" src="img/presentation.jpg" alt="Présentation de la série">
+    </div>
+  </section>
 
 
-    <section class="page-section">
-      <div class="container">
-        <div class="product-item">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/presentation.jpg" alt="">
-          
-          <div class="d-inline-flex ml-auto">
-            <div class="bg-faded p-5 rounded">
-             
-              <div class="intro-button mx-auto">
-              <a id="btn-ulule" class="btn btn-primary btn-xl" href="https://fr.ulule.com/neurotrucs/">Visitez notre Ulule</a>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="page-section">
+     <div class="container d-flex justify-content-center">
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/description.jpg" alt="description de la série" width="800">
+    </div>
+  </section>
 
+  <section class="page-section">
+     <div class="container d-flex justify-content-center">
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/ambitions.jpg" alt="Nos ambitions">
+    </div>
+  </section>
 
+<?php include("snipets/footer.php");?>
 
-  <?php include("snipets/footer.php");?>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

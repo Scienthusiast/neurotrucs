@@ -49,11 +49,9 @@
           </div>
         </div>
       </div>
-    </section>
 
 
-    <section class="page-section" id="quiz-core">
-      <div class="container">
+      <div class="container" id="quiz-core">
         <div class="row">
           <div class="col-xl-9 col-lg-10 mt-3 mx-auto">
             <div class="bg-faded rounded p-5">
@@ -98,41 +96,55 @@
              </div>
              <div class="questionnaire" id="q12">
               On peut implanter des faux souvenirs.
-             </div>
-             <div class="questionnaire" id="q13">
-               Le cerveau des femmes peut faire plusieurs choses à la fois, et pas celui des hommes.
-             </div>
-             <div class="questionnaire" id="q14">
-               La dopamine est à l'origine de la sensation de bonheur.
-             </div>
-             <div class="questionnaire" id="q15">
-               Lire un roman modifie le cerveau. 
-             </div>
+            </div>
+            <div class="questionnaire" id="q13">
+             Le cerveau des femmes peut faire plusieurs choses à la fois, et pas celui des hommes.
            </div>
-           <div class="text-center">
-             <p><em>Que pensez-vous de cette affirmation ?</em></p>
+           <div class="questionnaire" id="q14">
+             La dopamine est à l'origine de la sensation de bonheur.
            </div>
+           <div class="questionnaire" id="q15">
+             Lire un roman modifie le cerveau. 
+           </div>
+         </div>
+         <div class="text-center">
+           <p><em>Que pensez-vous de cette affirmation ?</em></p>
+         </div>
 
 
 
-           <div id="likert" class="col-md-12">
+         <div id="likert" class="col-md-12">
 
-            <!-- <a href="#" class="btn btn-lg btn-secondary likert-ans" id="likert1">Je suis convaincu <br>que c'est vrai</a>-->
-            <button class="likert-ans" id="likert1" >Je suis convaincu que c'est vrai</button> 
-            <button class="likert-ans" id="likert2" >Je pense que c'est vrai</button>
-            <button class="likert-ans" id="likert3" >Ça a plus de chances d'être vrai que faux</button>
-            <button class="likert-ans" id="likert4" >Aussi probable que ce soit vrai que faux</button>
-            <button class="likert-ans" id="likert5" >Ça a plus de chances d'être faux que vrai</button>
-            <button class="likert-ans" id="likert6" >Je pense que c'est faux</button>
-            <button class="likert-ans" id="likert7" >Je suis convaincu que c'est faux</button>
-          </div>
+          <!-- <a href="#" class="btn btn-lg btn-secondary likert-ans" id="likert1">Je suis convaincu <br>que c'est vrai</a>-->
+          <button class="likert-ans" id="likert1" >Je suis convaincu que c'est vrai</button> 
+          <button class="likert-ans" id="likert2" >Je pense que c'est vrai</button>
+          <button class="likert-ans" id="likert3" >Ça a plus de chances d'être vrai que faux</button>
+          <button class="likert-ans" id="likert4" >Aussi probable que ce soit vrai que faux</button>
+          <button class="likert-ans" id="likert5" >Ça a plus de chances d'être faux que vrai</button>
+          <button class="likert-ans" id="likert6" >Je pense que c'est faux</button>
+          <button class="likert-ans" id="likert7" >Je suis convaincu que c'est faux</button>
+        </div>
 
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="page-section about-heading">
+  <div class="container d-flex justify-content-center">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="mx-auto mt-3">       
+          <img class="img-fluid rounded about-heading-img mt-1 mb-lg-0" src="img/quiz.jpg" width="480">
         </div>
       </div>
     </div>
   </div>
 </div>
 </section>
+
+
 
 <?php include("snipets/footer.php");?>
 
