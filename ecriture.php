@@ -20,12 +20,7 @@
 
 <body>
 
-  <h1 class="site-heading text-center text-black d-none d-lg-block">
-    <!-- <span class="site-heading-upper text-primary mb-3">A SuperTitle</span> -->
-    <span class="site-heading-lower">Neurotrucs</span>
-  </h1>
-
-  <?php include("snipets/navbar.php");?>
+  <?php include("snipets/header.php");?>
 
   <section class="page-section about-heading">
     <div class="container">
@@ -33,9 +28,9 @@
         <div class="row">
           <div class="col-xl-9 col-lg-10 mx-auto mt-3">
             <div class="bg-faded rounded p-5">
-              <h3 class="section-heading mb-4">
-                <span class="section-heading-lower">L'écriture</span>
-              </h3>
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-lower">L'ecriture</span>
+              </h2>
               <p class="mb-0">
                 L’écriture des « NeuroTrucs » est nécessairement collective. Elle se structure autour de chaque thème pour produire :<br/>
                 - 1 épisode TV « Neurotrucs »<br/>

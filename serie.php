@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -18,28 +17,8 @@
 
 <body>
 
-	<h1 class="site-heading text-center text-black d-none d-lg-block">
-		<!-- <span class="site-heading-upper text-primary mb-3">A SuperTitle</span> -->
-		<span class="site-heading-lower">Neurotrucs</span>
-	</h1>
+	<?php include("snipets/header.php");?>
 
-	<?php include("snipets/navbar.php");?>
-	<section class="page-section">
-		<div class="container">
-			<div class="product-item">
-				<div class="product-item-title d-flex">
-					<div class="bg-faded p-5 d-flex ml-auto rounded format-serie">
-						<h3 class="mb-0">
-							<p>Format</p>
-							<p>5 minutes par episode</p>
-							<p>12 episodes par saison</p>
-							<p>4 saison deja prevues <br/>(possibilite de plus)</p>
-						</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
 	<section class="page-section about-heading">
@@ -50,7 +29,7 @@
 					<div class="col-xl-9 col-lg-10 mx-auto">
 						<div class="bg-faded rounded p-5">
 							<h2 class="section-heading mb-4">
-								<span class="section-heading-lower">La série</span>
+								<span class="section-heading-lower">La serie</span>
 							</h2>
 							<p class="mb-2">
 								<span class="redbold">« NeuroTrucs » ou l’improbable colocation.</span>
@@ -73,9 +52,27 @@
 
 	<section class="page-section">
 		<div class="container">
+
+			<div class="row mb-3">
+				<div class="col-xl-4 col-lg-4">
+					<img class="mx-auto l-flex rounded img-fluid mb-3 mb-lg-0" src="img/will.jpg" width="250" alt="Will">
+				</div>
+				<div class="bg-faded p-5 rounded format-serie col-xl-4 col-lg-4">
+					<h4>
+						<p>Format</p>
+						<p>5 minutes par episode</p>
+						<p>12 episodes par saison</p>
+						<p>4 saison deja prevues <br/>(possibilite de plus)</p>
+					</h4>
+				</div>
+				<div class="col-xl-4 col-lg-4">
+					<img class="mx-auto float-right rounded img-fluid mb-3 mb-lg-0" src="img/gina.jpg" width="250" alt="Gina">
+				</div>
+			</div>
+
+
 			<div class="row">
 				<div class="col-xl-6 col-lg-6">
-					<img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/will.png" width="100" alt="Will">
 					<div class="product-item-description d-flex mr-auto">
 						<div class="bg-faded p-5 rounded">
 							<h2 class="section-heading mb-0">
@@ -87,17 +84,44 @@
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6">
-					<img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/gina.png" width="100" alt="Gina">
 					<div class="product-item-description d-flex mr-auto">
 						<div class="bg-faded p-5 rounded">
 							<h2 class="section-heading mb-0">
 								<span class="section-heading-lower">Gina</span>
 							</h2>
 							<p class="mb-0">Etudiante en thèse dans un laboratoire de recherche en sciences cognitives. Elle est excentrique et bordélique. Elle aime la couleur et la fantaisie. Elle est passionnée par son métier et ses implications. Elle ne croit qu’en la méthode scientifique et est prête à tout pour convaincre les autres d’en faire de même.</p>
-							<p class="redbold">C’est elle qui rétablit la vérité sur les fausses croyances évoquées par Will.ant pour la série de ceux qui pensent savoir.</p>
+							<p class="redbold">C’est elle qui rétablit la vérité sur les fausses croyances évoquées par Will.</p>
 						</div>
 					</div>
 				</div>
+
+
+			<!-- 
+			<div class="row">
+				<div class="col-xl-6 col-lg-6">
+					<img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/will.jpg" width="300" alt="Will">
+					<div class="product-item-description d-flex mr-auto">
+						<div class="bg-faded p-5 rounded">
+							<h2 class="section-heading mb-0">
+								<span class="section-heading-lower">Will</span>
+							</h2>
+							<p class="mb-0">Ecrivain, auteur de romans policiers. Il est solitaire et obsédé par son travail. Il aime l'ordre et la propreté, et supporte mal qu’on lui change ses habitudes. Sa personnalité curieuse, maladroite et déconcertante est un atout pour en faire le représentant pour la série de ceux qui pensent savoir.</p>
+							<p class="redbold">Il croit en beaucoup d’idées reçues concernant les sciences cognitives.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6">
+					<img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/gina.jpg" width="300" alt="Gina">
+					<div class="product-item-description d-flex mr-auto">
+						<div class="bg-faded p-5 rounded">
+							<h2 class="section-heading mb-0">
+								<span class="section-heading-lower">Gina</span>
+							</h2>
+							<p class="mb-0">Etudiante en thèse dans un laboratoire de recherche en sciences cognitives. Elle est excentrique et bordélique. Elle aime la couleur et la fantaisie. Elle est passionnée par son métier et ses implications. Elle ne croit qu’en la méthode scientifique et est prête à tout pour convaincre les autres d’en faire de même.</p>
+							<p class="redbold">C’est elle qui rétablit la vérité sur les fausses croyances évoquées par Will.</p>
+						</div>
+					</div>
+				</div> -->
 			</div>
 		</div>
 	</section>

@@ -10,32 +10,37 @@ body {
     background-position: center;
     background-size: cover;
 }
-h1 {
+h1, h2{
     font-family: hacked;
 }
 p {
     line-height: 1.75;
 }
 
+#top-banner {
+    background-color: rgba(255, 255, 255, 0.95);
+}
 .text-faded {
     color: rgba(255, 255, 255, .3);
 }
 .site-heading {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    margin: 0;
     text-transform: uppercase;
     line-height: 1;
     font-family: hacked;
 }
 .site-heading .site-heading-upper {
-    display: block;
-    font-size: 2rem;
-    font-weight: 800;
-}
-.site-heading .site-heading-lower {
     font-size: 5rem;
     font-weight: 100;
     line-height: 4rem;
+    color: rgb(193, 6, 46);
+}
+.site-heading .site-heading-lower {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
 }
 .page-section {
     margin-top: 5rem;
@@ -194,8 +199,13 @@ p {
     box-shadow: 0 3px 3px 0 rgba(33, 37, 41, .1);
 }
 .btn-primary {
-    background-color: #e6a756;
+    
     border-color: #e6a756;
+}
+.btn-ulule {
+    background-color: rgb(193, 6, 46);
+    border-color: rgb(193, 6, 46);
+    color: rgb(255, 255, 255);
 }
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
     background-color: #df902a;

@@ -13,5 +13,6 @@
 			<area shape="rect" coords="534, 0, 640, 79" href="http://cognisciences.com/" alt="cognisciences">
 		</map>
 		<img src="img/partenaires.jpg" usemap="logos-partenaires"/>
+		<p>Tous droits réservés &#169; neurotrucs 2018</p>
     </div>
   </footer>

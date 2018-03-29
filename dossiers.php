@@ -20,12 +20,7 @@
 
 <body>
 
-  <h1 class="site-heading text-center text-black d-none d-lg-block">
-    <!-- <span class="site-heading-upper text-primary mb-3">A SuperTitle</span> -->
-    <span class="site-heading-lower">Neurotrucs</span>
-  </h1>
-
-  <?php include("snipets/navbar.php");?>
+  <?php include("snipets/header.php");?>
 
   <section class="page-section about-heading">
       <div class="container">
@@ -33,9 +28,9 @@
           <div class="row">
             <div class="col-xl-9 col-lg-10 mx-auto mt-3">
               <div class="bg-faded rounded p-5">
-                <h3 class="section-heading mb-4">
+                <h2 class="section-heading mb-4">
                   <span class="section-heading-lower">Les dossiers « Neurotrucs en +»</span>
-                </h3>
+                </h2>
                 <p class="mb-0">
                 Chaque épisode de « Neurotrucs » sera complété par un article écrit, rédigé par un expert sur le sujet et téléchargeable sur la plateforme web, pour ceux qui préfèrent lire.<br/>
 				La bibliographie complète des références utilisées pour chaque sujet et des ressources documentaires (articles scientifiques, reportages...) seront mises à disposition.

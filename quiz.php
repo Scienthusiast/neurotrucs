@@ -20,12 +20,8 @@
 
 <body>
 
-  <h1 class="site-heading text-center text-black d-none d-lg-block">
-    <!-- <span class="site-heading-upper text-primary mb-3">A SuperTitle</span> -->
-    <span class="site-heading-lower">Neurotrucs</span>
-  </h1>
+  <?php include("snipets/header.php");?>
 
-  <?php include("snipets/navbar.php");?>
 
   <section class="page-section about-heading">
     <div class="container">
