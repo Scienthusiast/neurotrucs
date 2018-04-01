@@ -3,13 +3,46 @@ $(function(){
 
 	var nb_quest = 0;
 	var answers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+	 // console.log(JSON.stringify({answers: JSON.stringify(answers)}));
 	ans_likert = function(event)
 	{		
 		answers[nb_quest - 1] = event.data.ans;
 		if (nb_quest == 15)
 		{
-			alert("finito");
-			console.log(answers);
+			
+			$('input[name="answers"]').val(answers.toString());
+			$('#form_quiz').submit();
+
+
+			// let post_quiz = async (url, POST) => {
+			//     try {
+			//         let call = await fetch(url, {
+			//             method: "POST",
+			//             body: JSON.stringify({
+			//             	answers: answers
+			//             }),
+			//             headers: {
+			//                  // 'content-type': 'application/json'
+			//                  'Content-Type': 'application/x-www-form-urlencoded'
+			//             }
+			//         })
+			//         let result = await call.json()
+			//         console.log(result) // result
+			//         if (result.success) // success
+			//         {
+
+			//         }
+			//         else // fail
+			//         {
+
+			//         }
+			//     }
+			//     catch(error) {
+			//         console.log(error)
+			//     }
+			// }
+			// post_quiz("./request.php");
+			// console.log(answers);
 		}
 		else
 		{
@@ -49,8 +82,38 @@ $(function(){
 	        yep.append(theDiv);    // Changed (from edit)
 	    }
 	}
+
+
+
+
+
 */
 	//m'inspirer de mes boutons orange moches de e - e1.js
 
 
 });
+
+
+
+let post_quiz = async (url, POST) => {
+    try {
+        let call = await fetch(url, {
+            method: "POST",
+            body: JSON.stringify(answers),
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+        let result = await call.json()
+        console.log(result) // result
+        if (result.success)
+        {
+            location.reload();
+        }
+    }
+    catch(error) {
+        console.log(String(error))
+    }
+}
+post_quiz("./quiz.php")
+

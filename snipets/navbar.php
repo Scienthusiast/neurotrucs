@@ -5,7 +5,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav mx-auto">
-				<li <?php if(basename($_SERVER['REQUEST_URI'])=='index.php'){echo 'class="active ';} else{echo 'class="';}?>nav-item px-lg-4">
+				<li <?php if(basename($_SERVER['REQUEST_URI'])=='index.php' OR basename($_SERVER['REQUEST_URI'])=='neurotrucs'){echo 'class="active ';} else{echo 'class="';}?>nav-item px-lg-4">
 					<a class="nav-link text-uppercase text-expanded" href="index.php">Accueil</a>
 				</li>
 				<li <?php if(basename($_SERVER['REQUEST_URI'])=='serie.php'){echo 'class="active ';} else{echo 'class="';}?>nav-item px-lg-4">
