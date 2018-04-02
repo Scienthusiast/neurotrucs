@@ -3,10 +3,6 @@ $(function(){
 
 	var nb_quest = 0;
 	var answers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-	 // console.log(JSON.stringify({answers: JSON.stringify(answers)}));
-
-
-	var $form = $('.register');
 
 	function validateEmail(email) {
 		var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -17,13 +13,10 @@ $(function(){
 	ans_likert = function(event)
 	{		
 		answers[nb_quest - 1] = event.data.ans;
-		if (nb_quest == 1)
+		if (nb_quest == 15 )
 		{
-			
 			$('input[name="answers"]').val(answers.toString());
 			$('#email_confirm').modal();
-			// $('#form_quiz').submit();
-
 		}
 		else
 		{
@@ -35,10 +28,11 @@ $(function(){
 		
 	};
 
-
 	$("#email-validation").click(function(){
 		if(validateEmail($('#email-text').val()))
 		{
+			let email_visitor = $('#email-text').val();
+			$('input[name="email"]').val(email_visitor.toString());
 			$('#email_confirm').modal('toggle');
 			$('#form_quiz').submit();
 		}
@@ -77,36 +71,31 @@ $(function(){
 	}
 
 
-
-
-
 */
-	//m'inspirer de mes boutons orange moches de e - e1.js
 
 
 });
 
 
-
-let post_quiz = async (url, POST) => {
-    try {
-        let call = await fetch(url, {
-            method: "POST",
-            body: JSON.stringify(answers),
-            headers: {
-                'content-type': 'application/json'
-            }
-        })
-        let result = await call.json()
-        console.log(result) // result
-        if (result.success)
-        {
-            location.reload();
-        }
-    }
-    catch(error) {
-        console.log(String(error))
-    }
-}
-post_quiz("./quiz.php")
+// let post_quiz = async (url, POST) => {
+//     try {
+//         let call = await fetch(url, {
+//             method: "POST",
+//             body: JSON.stringify(answers),
+//             headers: {
+//                 'content-type': 'application/json'
+//             }
+//         })
+//         let result = await call.json()
+//         console.log(result) // result
+//         if (result.success)
+//         {
+//             location.reload();
+//         }
+//     }
+//     catch(error) {
+//         console.log(String(error))
+//     }
+// }
+// post_quiz("./quiz.php")
 

@@ -2,7 +2,6 @@
 include("conn.php");
 
 $quiz_done = false;
-$prod_version = false;
 
 if($_POST)
 {
@@ -24,18 +23,9 @@ if($_POST)
 		if ($quiz_done)
 		{
 
-			// if(!($prod_version))
-			// {
-			// 	$req_SQL = 'INSERT INTO neurotrucs_quiz VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
-
-			// }
-			// else
-			// {
-			// 	$req_SQL = 'INSERT INTO cestpaschwordp VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
-			// }
-			$req = $bdd->prepare('INSERT INTO neurotrucs_quiz VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+			$req = $bdd->prepare('INSERT INTO neurotrucs_quiz VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)');
 			$req->execute(array(
-				'',
+				$_POST['email'],
 				$ans[0],
 				$ans[1],
 				$ans[2],
@@ -50,8 +40,8 @@ if($_POST)
 				$ans[11],
 				$ans[12],
 				$ans[13],
-				$ans[14],
-				''));
+				$ans[14]
+				));
 		}	
 	}
 }
@@ -107,7 +97,7 @@ if($_POST)
 									echo ($_POST['answers']);
 									if($result)
 									{
-										echo "<br/>youhou, inda bdd";
+										echo "<br/>Inclus dans la base de données";
 									}
 								}
 
@@ -223,6 +213,7 @@ if($_POST)
 
 	<form id="form_quiz" method="post" action="quiz.php">
 		<input type="hidden" id="ans_quiz" name="answers" value="">
+		<input type="hidden" id="email_quiz" name="email" value="">
 	</form>
 
 
