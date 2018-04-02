@@ -27,13 +27,33 @@
         <div class="about-heading-content">
           <div class="row">
             <div class="col-xl-9 col-lg-10 mx-auto mt-3">
-              <div class="bg-faded rounded p-5">
-                <h2 class="section-heading mb-4">
-                  <span class="section-heading-lower">Les dossiers « Neurotrucs en +»</span>
+              <div class="bg-faded rounded p-3">
+                <h2 class="section-heading text-center">
+                  <span class="section-heading-lower">Les « Neurotrucs en plus »</span>
                 </h2>
-                <p class="mb-0">
-                Chaque épisode de « Neurotrucs » sera complété par un article écrit, rédigé par un expert sur le sujet et téléchargeable sur la plateforme web, pour ceux qui préfèrent lire.<br/>
-				La bibliographie complète des références utilisées pour chaque sujet et des ressources documentaires (articles scientifiques, reportages...) seront mises à disposition.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page-section about-heading">
+      <div class="container">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto mt-3">
+              <div class="bg-faded rounded p-3">
+                <h3 class="section-heading">
+                  <span class="section-heading-lower">Des episodes bonus</span>
+                </h3>
+                <p>
+                  Compléments à chaque épisode de « Neurotrucs » </p>
+                  <p>
+Le but de chaque viéo est d’apporter les précisions, les sources et toutes les explications nécessaires à la compréhension des sujets abordés dans « Neurotrucs ».<br/>La durée des vidéos sera variable en fonction du sujet.</p>
+<p>
+Les personnages de Will et Gina échangent plus longuement à propos des idées reçues évoquées dans « Neurotrucs » pour fournir une vulgarisation scientifique complète et détaillée, toujours sur un ton léger et avec humour. Quelques informations sur les personnages seront également distillées dans ces épisodes bonus, pour attirer le public.</p>
+<p>
+Le dialogue entre Will, novice, et Gina, experte, permet aux téléspectateurs de suivre le raisonnement et d’intégrer les nouvelles informations et corriger sa croyance en même temps que Will.
                 </p>
               </div>
             </div>
@@ -41,7 +61,37 @@
         </div>
       </div>
     </section>
+  <section class="page-section about-heading">
+        <div class="container">
+          <div class="about-heading-content">
+            <div class="row">
+              <div class="col-xl-9 col-lg-10 mx-auto mt-3">
+                <div class="bg-faded rounded p-3">
+                  <h3 class="section-heading">
+                    <span class="section-heading-lower">Articles ecrits</span>
+                  </h3>
+                  <p>
+                    Compléments à chaque épisode de « Neurotrucs »
+                  </p>
+                  <p>
+  Chaque épisode de « Neurotrucs » sera complété par un article écrit, rédigé par un expert sur le sujet et téléchargeable sur la plateforme web, pour ceux qui préfèrent lire.
+                  </p>
+                  <p>
+La bibliographie complète des références utilisées pour chaque sujet et des ressources documentaires (articles scientifiques, reportages...) seront mises à disposition.
 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- 
+<p class="mb-0">
+                Chaque épisode de « Neurotrucs » sera complété par un article écrit, rédigé par un expert sur le sujet et téléchargeable sur la plateforme web, pour ceux qui préfèrent lire.<br/>
+        La bibliographie complète des références utilisées pour chaque sujet et des ressources documentaires (articles scientifiques, reportages...) seront mises à disposition.
+                </p> -->
     <section class="page-section about-heading">
       <div class="container">
         <img class="img-fluid rounded about-heading-img mt-1 mb-lg-0" src="img/ecriture.jpg" alt="">

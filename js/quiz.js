@@ -4,45 +4,26 @@ $(function(){
 	var nb_quest = 0;
 	var answers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 	 // console.log(JSON.stringify({answers: JSON.stringify(answers)}));
+
+
+	var $form = $('.register');
+
+	function validateEmail(email) {
+		var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return regex.test(email);
+	};
+
+
 	ans_likert = function(event)
 	{		
 		answers[nb_quest - 1] = event.data.ans;
-		if (nb_quest == 15)
+		if (nb_quest == 1)
 		{
 			
 			$('input[name="answers"]').val(answers.toString());
-			$('#form_quiz').submit();
+			$('#email_confirm').modal();
+			// $('#form_quiz').submit();
 
-
-			// let post_quiz = async (url, POST) => {
-			//     try {
-			//         let call = await fetch(url, {
-			//             method: "POST",
-			//             body: JSON.stringify({
-			//             	answers: answers
-			//             }),
-			//             headers: {
-			//                  // 'content-type': 'application/json'
-			//                  'Content-Type': 'application/x-www-form-urlencoded'
-			//             }
-			//         })
-			//         let result = await call.json()
-			//         console.log(result) // result
-			//         if (result.success) // success
-			//         {
-
-			//         }
-			//         else // fail
-			//         {
-
-			//         }
-			//     }
-			//     catch(error) {
-			//         console.log(error)
-			//     }
-			// }
-			// post_quiz("./request.php");
-			// console.log(answers);
 		}
 		else
 		{
@@ -54,6 +35,18 @@ $(function(){
 		
 	};
 
+
+	$("#email-validation").click(function(){
+		if(validateEmail($('#email-text').val()))
+		{
+			$('#email_confirm').modal('toggle');
+			$('#form_quiz').submit();
+		}
+		else
+		{
+			$('#email_confirm_label').html('Le format de l\'email est incorrect, merci de le corriger !')
+		}
+	})
 
 	$("#btn-quiz").click(function(){
 		$("#intro-quiz").hide();

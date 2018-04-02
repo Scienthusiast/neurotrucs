@@ -26,53 +26,96 @@
     </div>
   </section> -->
   <section class="page-section">
-  <div class="row">
-    <div class="container product-item-description d-flex justify-content-center col-lg-8">
-      <div class="bg-faded p-5 rounded">
-        <p>
-          NEUROTRUCS est un projet transmédias de vulgarisation scientifique et humoristique à destination du grand public porté par :
-        </p>
-        <div class="row">
-          <div class="col-lg-6">
+    <div class="row">
+      <div class="container d-flex justify-content-center col-lg-8">
+        <div class="bg-faded p-5 rounded">
+          <p>
+            NEUROTRUCS est un projet transmédias de vulgarisation scientifique et humoristique à destination du grand public porté par :
+          </p>
+          <div class="row mb-4">
+            <div class="col-lg-6">
+              <div class= "row">
+                <div class="col-lg-4">
+                  <img class="intro-img img-fluid mb-3 mb-lg-0 rounded  l-flex" src="img/ness.webp" alt="Nesrine">
+                </div>
+                <div class="col-lg-8">
+                  <span class="nous"> Nesrine Hazem</span><br/>
+                  Etudiante en thèse de neurosciences cognitives
+                </div>
+              </div>
+            </div>
 
-            <div>
-              <img class="intro-img img-fluid mb-3 mb-lg-0 rounded  l-flex" src="img/ness.webp" alt="Nesrine">
-            Nesrine Hazem<br/>
-            Etudiante en thèse de neurosciences cognitives
+            <div class="col-lg-6">
+              <div class= "row">
+                <div class="col-lg-4">
+                  <img class="intro-img img-fluid mb-3 mb-lg-0 rounded l-flex" src="img/clara.webp" alt="Clara Ann">
+                </div>
+                <div class="col-lg-8">
+                  <span class="nous"> Clara Ann Marchetti</span><br/>
+                  Diplômée d'un master en sciences cognitives et comédienne
+                </div>
+              </div>
+            </div>
           </div>
-            <div>
-              <img class="intro-img img-fluid mb-3 mb-lg-0 rounded  l-flex" src="img/tim.webp" alt="Timothée">
-            Timothée Behra<br/>
-            Diplômé d'un master en sciences cognitives et spécialiste en médiation scientifique
+          <div class="row mb-4">
+            <div class="col-lg-6">
+              <div class= "row">
+                <div class="col-lg-4">
+                  <img class="intro-img img-fluid mb-3 mb-lg-0 rounded  l-flex" src="img/tim.webp" alt="Timothée">
+                </div>
+                <div class="col-lg-8">
+                  <span class="nous"> Timothée Behra</span><br/>
+                Diplômé d'un master en sciences cognitives et spécialiste en médiation scientifique
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class= "row">
+                <div class="col-lg-4">
+                  <img class="intro-img img-fluid mb-3 mb-lg-0 rounded l-flex" src="img/tanka.webp" alt="Tanka">
+                </div>
+                <div class="col-lg-8">
+                   <span class="nous"> Nicolas Delahaye "TANKA"</span><br/>
+                  Auteur, scénariste, humoriste et comédien
+                </div>
+              </div>
+            </div>
           </div>
-          </div>
-          <div class="col-lg-6">
-            <div>
-              <img class="intro-img img-fluid mb-3 mb-lg-0 rounded l-flex" src="img/clara.webp" alt="Clara Ann">
-            Clara Ann Marchetti<br/>
-            Diplômée d'un master en sciences cognitives et comédienne
-          </div>
-            <div>
-              <img class="intro-img img-fluid mb-3 mb-lg-0 rounded l-flex" src="img/tanka.webp" alt="Tanka">
-            Nicolas Delahaye "TANKA"<br/>
-            Auteur, scénariste, humoriste et comédien
-          </div>
-          </div>
+<!-- 
+              <div>
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded  l-flex" src="img/tim.webp" alt="Timothée">
+                Timothée Behra<br/>
+                Diplômé d'un master en sciences cognitives et spécialiste en médiation scientifique
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div>
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded l-flex" src="img/clara.webp" alt="Clara Ann">
+                Clara Ann Marchetti<br/>
+                Diplômée d'un master en sciences cognitives et comédienne
+              </div>
+              <div>
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded l-flex" src="img/tanka.webp" alt="Tanka">
+                Nicolas Delahaye "TANKA"<br/>
+                Auteur, scénariste, humoriste et comédien
+              </div>
+            </div>
+          </div> -->
+          <p>
+            Nous avons le plaisir d'être marrainés par Nathalie George, directrice de recherche au CNRS et coresponsable de l’équipe Neurosciences sociales et affectives de l’ICM.<br/><br/>
+            Le projet est constitué d'une série TV de format court humoristique complétée par une plateforme web contenant des programmes supplémentaires de vulgarisation scientifique.
+          </p>
         </div>
-        <p>
-          Nous avons le plaisir d'être marrainés par Nathalie George, directrice de recherche au CNRS et coresponsable de l’équipe Neurosciences sociales et affectives de l’ICM.<br/><br/>
-          Le projet est constitué d'une série TV de format court humoristique complétée par une plateforme web contenant des programmes supplémentaires de vulgarisation scientifique.
-        </p>
+
+
+
       </div>
-
-
-      
     </div>
-  </div>
 
-</section>
+  </section>
 
-<?php include("snipets/ulule.php");?>
+  <?php include("snipets/ulule.php");?>
   
 
   <section class="page-section about-heading">
@@ -88,16 +131,16 @@
   </div>
 </section>
 <section class="page-section about-heading">
-    <div class="container d-flex justify-content-center">
-      <div class="about-heading-content">
-        <div class="row">
-          <div class="mx-auto mt-3">       
-            <img class="img-fluid rounded about-heading-img mt-1 mb-lg-0" src="img/ambitions.jpg" alt="Nos ambitions">
-          </div>
+  <div class="container d-flex justify-content-center">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="mx-auto mt-3">       
+          <img class="img-fluid rounded about-heading-img mt-1 mb-lg-0" src="img/ambitions.jpg" alt="Nos ambitions">
         </div>
       </div>
     </div>
   </div>
+</div>
 </section>
 
 

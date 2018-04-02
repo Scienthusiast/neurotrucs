@@ -4,7 +4,8 @@
 }
 
 body {
-    font-family: Lora;
+    font-family: dinneuzeitgroteskltw01-_812426,sans-serif;
+    font-weight: bold;
     background: linear-gradient(rgba(255, 255, 255, .65), rgba(60, 60, 60, .65)), url(../img/bg.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -13,8 +14,15 @@ body {
 h1, h2{
     font-family: hacked;
 }
+h3{
+    font-family: hacked;
+    color: rgb(193, 6, 46);
+}
 p {
     line-height: 1.75;
+}
+.nous {
+    color: rgb(193, 6, 46);
 }
 
 #top-banner {

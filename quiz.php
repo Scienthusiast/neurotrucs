@@ -80,7 +80,7 @@ if($_POST)
 
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.5/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" /> -->
 	<link href="css/quiz.css" rel="stylesheet">
 	<link href="css/nt.css" rel="stylesheet">
 
@@ -225,14 +225,46 @@ if($_POST)
 		<input type="hidden" id="ans_quiz" name="answers" value="">
 	</form>
 
+
+	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+
+<div class="modal fade" id="email_confirm" tabindex="-1" role="dialog" aria-labelledby="email_confirm_label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h4 class="modal-title" id="email_confirm_label">Quiz terminé ! Entrez votre adresse email pour voir les résultats</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="email-text" class="control-label">Email :</label>
+            <input type="text" class="form-control" id="email-text">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" id="email-validation">Valider</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 	<?php include("snipets/footer.php");?>
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/quiz.js"></script>
 
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script> -->
+	<script src="js/quiz.js"></script>
 </body>
 
 </html>
