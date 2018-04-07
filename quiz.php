@@ -2,6 +2,7 @@
 include("conn.php");
 
 $quiz_done = false;
+$results_in_bdd = false;
 
 if($_POST)
 {
@@ -24,7 +25,7 @@ if($_POST)
 		{
 
 			$req = $bdd->prepare('INSERT INTO neurotrucs_quiz VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)');
-			$req->execute(array(
+			$results_in_bdd = ($req->execute(array(
 				$_POST['email'],
 				$ans[0],
 				$ans[1],
@@ -41,7 +42,7 @@ if($_POST)
 				$ans[12],
 				$ans[13],
 				$ans[14]
-				));
+				)));
 		}	
 	}
 }
@@ -80,8 +81,16 @@ if($_POST)
 
 	<?php include("snipets/header.php");?>
 
-
-	<section class="page-section about-heading">
+	<?php 
+	if($results_in_bdd)
+	{
+		echo "<section class=\"page-section about-heading hidden\">";
+	}
+	else
+	{
+		echo "<section class=\"page-section about-heading\">";
+	}
+	?>	
 		<div class="container">
 			<div class="about-heading-content">
 				<div class="row">
@@ -90,22 +99,9 @@ if($_POST)
 							<h2 class="section-heading mb-4">
 								<span class="section-heading-lower">Neuroquiz</span>
 							</h2>
-							<div> <!-- juste pour debug-->
-								<?php 
-								if($quiz_done)
-								{
-									echo ($_POST['answers']);
-									if($result)
-									{
-										echo "<br/>Inclus dans la base de données";
-									}
-								}
-
-								?>
-							</div> <!-- findebug -->
-							<p class="mb-0">
+								<p class="mb-0">
 								Les mystères entourant le fonctionnement du cerveau produisent de nombreux fantasmes. Souvent par sensationnalisme, un grand nombre d'idées fausses sur le cerveau circulent, mais il est également vrai que le cerveau est capable de certaines choses qui peuvent sembler tout à fait extraordinaires !<br/><br/>
-
+								</p>
 								<div class="text-center">
 									<em>Saurez-vous reconnaître le vrai du faux ?</em></p>
 

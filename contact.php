@@ -1,28 +1,3 @@
-<?php 
-	$notre_email = "neurotrucs@gmail.com";
-	$objet = '';
-	$visiteur = '';
-	$email_visiteur = '';
-	$message_visiteur = '';
-	$mail_envoye = false;
-	// if(isset($_POST))
-	// {
-	// 	$visiteur = $_POST['prenom']." ".$_POST['nom'];
-	// 	$email_visiteur = $_POST['email'];
-	// 	$objet = $_POST['objet'];
-	// 	$message_visiteur= $_POST['message'];
-	// 	$to  = $notre_email; 
-	// 	$sujet = 'Formulaire contact neurotrucs:'. $objet;
-	// 	$headers  = 'MIME-Version: 1.0' . "\r\n";
-	// 	$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-	// 	$headers .= 'From: '.$visiteur.'<'.$email_visiteur.'>'. "\r\n";
-	// 	if (mail($to, $sujet, $message_visiteur, $headers))
-	// 	{
-	// 		$mail_envoye = true;
-	// 	}
-	// }
-
-?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -49,8 +24,30 @@
 						<div class="bg-faded rounded pt-3 pb-2 text-center">
 
 							<p>
+								<?php
+									if($_GET)
+									{
+										if(isset($_GET['succes']))
+										{
+											if(($_GET['succes']) == 1)
+											{
+												echo "<p id=notif_succes>";
+												echo "Votre message est bien enregistré, merci beaucoup pour votre intérêt !";
+												echo "</p>";
+											}
+											else
+											{
+												echo "<p id=notif_echec>";
+												echo "Une erreur s'est produite et la transmission de votre message a échoué... nous en sommes sincèrement désolés. Vous pouvez nous contacter à l'adresse email neurotrucs(AT)gmail(POINT)com.";
+												echo "</p>";
+											}
+											
+										}
+									}
+								?>
 								Pour suivre toute l'actualité du projet, n'hésitez pas à visiter notre
-								<a href="https://www.facebook.com/projetneurotrucs"> page facebook</a>.
+								<a href="https://www.facebook.com/projetneurotrucs"> page facebook</a>.<br/>
+								
 							</p>
 						</div>
 					</div>
@@ -67,22 +64,22 @@
 							<h2 class="section-heading">
 								<span class="section-heading-lower">Formulaire de contact</span>
 							</h2>
-							<form method="POST" action="contact.php" id="form_contact">
+							<form method="POST" action="contact_form.php" id="form_contact">
 								<div class="form-group">
 									<label for="nom">Nom :</label>
-									<input type="text" class="form-control" id="nom" placeholder="Nom">
+									<input type="text" class="form-control" name="nom" id="nom" placeholder="Nom">
 								</div>
 								<div class="form-group">
 									<label for="prenom">Prénom :</label>
-									<input type="text" class="form-control" id="prenom" placeholder="Prénom">
+									<input type="text" class="form-control" name="prenom" id="prenom" placeholder="Prénom">
 								</div>
 								<div class="form-group">
 									<label for="email">Email :</label>
-									<input type="text" class="form-control" id="email" placeholder="Votre email">
+									<input type="text" class="form-control" name="email" id="email" placeholder="Votre email">
 								</div>
 								<div class="form-group">
 									<label for="objet">Objet :</label>
-									<select name="object">
+									<select name="objet" id="objet">
 										<option value="renseignement">demande de renseignement</option>
 										<option value="financement">financement</option>
 										<option value="production">production</option>
@@ -91,7 +88,7 @@
 								</div>
 								<div class="form-group">
 									<label for="message">Message :</label>
-									<textarea class="form-control" id="message" rows="10"></textarea>
+									<textarea class="form-control" name="message" id="message" rows="10"></textarea>
 								</div>
 
 								<div class="text-center">

@@ -21,6 +21,12 @@ h3{
 p {
     line-height: 1.75;
 }
+#notif_succes {
+    color: rgb(0, 255, 0);
+}
+#notif_echec {
+    color: rgb(255, 0, 0);
+}
 .nous {
     color: rgb(193, 6, 46);
 }
